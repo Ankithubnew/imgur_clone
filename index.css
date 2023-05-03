@@ -1,0 +1,227 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    /* position: relative; */
+}
+.navbar{
+    background: url(https://s.imgur.com/desktop-assets/desktop-assets/homebg.e52b5cdf24f83bcd55f9f1318855f2ef.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    /* margin-bottom: 100px; */
+
+    /* text-align: center; */
+    
+    
+
+}
+.navtop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+
+}
+.left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-left: 20px;
+
+}
+
+.navtop-logo>img{
+    width: 100%;
+    height: 45px;
+    /* color: aliceblue; */
+    /* background-color:#1bb76e; */
+}
+
+.navtop-newpost>button{
+    background-color: #1bb76e;
+    padding:10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    /* height: 15px; */
+}
+.navtop-input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 400px;
+    height: 40px;
+    border-radius: 2px;
+    overflow: hidden;
+    /* position: relative; */
+}
+.navtop-input>input{
+    flex: 1;
+    height: 100%;
+    padding: 0 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background-color: transparent;
+    color: #fff;
+    background: hsla(0,0%,100%,.25);
+}
+.navtop-input>button{
+    width: 40px;
+    height: 40px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    background: hsla(0,0%,100%,.25);
+}
+.right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin-right: 20px;
+
+}
+.right>button{
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    color: white;
+}
+.right>button:nth-child(1){
+    background-color: #6432f9;
+}
+.right>button:nth-child(3){
+    background-color: #1bb76e;
+}
+.right>a{
+    /* background-color: hsla(0,0%,100%,.25); */
+    color: white;
+}
+.navbar>.textt{
+    font-size: 24px;
+    letter-spacing: .6px;
+    color: #aed8ea;
+    align-self: center;
+    text-align: center;
+}
+.filter{
+    /* margin-bottom: 1px; */
+    margin: auto;
+    padding-bottom: 10px;
+    width: 80%;
+
+}
+.filter>.tags{
+    display: flex;
+    /* margin: 0 200px; */
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.filter>.tags>a{
+    color: white;
+    text-decoration: none;
+    
+}
+.filter>.container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.filter>.container>div{
+    height: 130px;
+    width: 110px;
+    /* border: 1px solid red; */
+}
+.option{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.option select{
+    padding: 8px 13px;
+    /* background-color: #1bb76e; */
+    border: none;
+    /* background-color: gray; */
+    background: transparent;
+    color: white;
+    
+}
+.option option{
+    padding: 8px 13px;
+    /* background-color: #1bb76e; */
+    border: none;
+    background-color: gray;
+
+    
+}
+.filter>.option>.leftviral{
+    
+}
+.filter>.option>.rightviral{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    gap: 20px;
+}
+.container>div{
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease-in-out;
+    
+
+}
+.container>div:hover{
+    transform: translateY(-5px);
+}
+.tagselem{
+    border-radius: 10px;
+}
+.tagselem>img{
+    width: 100%;
+    height: 100%;
+}
+.tagselem>.tagstext>p{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: white;
+}
+.content{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:20px;
+    margin: auto;
+    /* margin-top: 20px; */
+}
+.ctext{
+    text-align: center;
+}
+.ck{
+    background-color: #2e3035;
+    /* margin-top: 20px; */
+    /* height:max-content; */
+}
+
+.cdiv{
+    /* border: 1px solid teal; */
+    display: flex;
+    flex-direction: column;
+
+}
+
+.cdiv>img{
+    width: 100%;
+}

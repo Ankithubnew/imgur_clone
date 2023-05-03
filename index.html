@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imgur Clone</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"> -->
+    <link rel="icon" type="image/png" href="https://s.imgur.com/images/favicon-96x96.png" sizes="96x96">
+    <script
+    src="https://kit.fontawesome.com/6c1f5c4092.js"
+    crossorigin="anonymous"
+  ></script>
+
+</head>
+<body>
+    <div class="navbar">
+        <div class="navtop">
+            <div class="left">
+                <div class="navtop-logo">
+                    <img src="https://www.fastly.com/cimages/6pk8mg3yh2ee/6jvZ13EgIEa0gow2oeqi4M/f4b2ca2d2a6bd178c3a6b134fcc43a5e/imgur_2x.png" alt="logo" >
+                </div>
+                <div class="navtop-newpost">
+                    <button>
+                        <i class="fa-solid fa-plus"></i> New Post
+                    </button>
+                </div>
+            </div>
+            <div class="navtop-input">
+                <input id="input" type="text" onchange="debounce(FilterData,500)" placeholder="Images, #tags, @users oh my!">
+                <button onclick="search()"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div class="right">
+                <button>Go Ad-Free</button>
+                <a>Sign in</a>
+                <button>Sign up</button>
+
+            </div>
+        </div>
+        <div class="textt">
+            <h3>When this baby hits 88 memes per hour...you're gonna see some serious stuff.</h3>
+        </div>
+        <div class="filter">
+            <div class="tags">
+                <a href="">EXPLORE TAGS</a>
+                <a href="">MORE TAGS <i class="fa-solid fa-plus"></i></a>
+            </div>
+            <div class="container">
+                <!-- <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div> -->
+            </div>
+
+            <div class="option">
+                <div class="leftviral">
+                    <select onchange="FilterData()">
+                        <option value="viral">MOST VIRAL</option>
+                        <option value="submit">USER SUBMITTED</option>
+                        <option value="score">USER SCORING</option>
+                    </select>
+                </div>
+                <div class="rightviral">
+                    <select onchange="FilterData()">
+                        <option value="viral">POPULAR</option>
+                        <option value="submit">NEWEST</option>
+                        <option value="score">BEST</option>
+                        <option value="score">RANDOM</option>
+                    </select>
+                    <i style="color: whitesmoke;" class="fa-solid fa-filter"></i>
+                    <i style="color: whitesmoke;" class="fa-solid fa-circle-play"></i>
+                    <i style="color: whitesmoke;" class="fa-brands fa-windows"></i>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ck">
+
+        <div class="content">
+            
+        </div>
+    </div>
+    
+</body>
+<script src="index.js"></script>
+</html>
